@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input-section {
+  display: flex;
+  gap: 5px;
+}
+
+.input-section__button {
+  flex-grow: 0;
+}

@@ -1,0 +1,21 @@
+.sample {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 6px solid #fff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
