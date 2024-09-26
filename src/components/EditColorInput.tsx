@@ -32,11 +32,13 @@ export const EditColorInput = (props: Props) => {
       <form className={inputSection} onSubmit={input === null ? noop : onSubmit}>
         <input
           type="text"
+          className={`input ${props.isDisabled || input === null ? "disabled" : ""}`}
           disabled={props.isDisabled || input === null}
           name="Color value"
           value={input ?? props.value}
-          onChange={(e) => input !== null && setInput(e.target.value)} />
-        <button type="submit" className={inputSectionButton} onClick={onEdit}>
+          onChange={(e) => input !== null && setInput(e.target.value)}
+        />
+        <button type="submit" className={`${inputSectionButton} button secondary`} onClick={onEdit}>
           {input === null ? "Edit" : "Save"}
         </button>
       </form>

@@ -25,7 +25,7 @@ export const IntegrationApp = () => {
         <section>
           <EditColorInput isDisabled={isDisabled} value={elementValue?.color ?? ""} onChange={onInputValueChange} />
         </section>
-        <div className={sample} style={{ backgroundColor: parsedElementColor.toRgbString() }} />
+        <div className={`${sample} section`} style={{ backgroundColor: parsedElementColor.toRgbString() }} />
       </div>
       {config?.useAlpha
         ? <RgbaColorPicker color={parsedElementColor.toRgb()} onChange={c => setElementValue({ color: serializeColor(tinyColor(c), config) })} />
